@@ -167,3 +167,15 @@
 </body>
 
 </html>
+
+Avaliação
+Estrutura semântica correta: usa <header>, <main> uma única vez, <footer>, <nav>, <section>, <article> e <aside> nos lugares certos — nada de <div> genérica fazendo o papel de outra tag.
+Hierarquia de headings sem pular níveis: só um <h1> no cabeçalho, e os <h2> seguem organizando cada seção (Últimas Notícias, Vídeos da Rodada, Anúncios, Sugira uma notícia).
+Labels perfeitamente associados: todo for bate exatamente com o id correspondente (nome/nome, email/email, titulo/titulo, etc).
+Elementos clicáveis corretos: o envio do formulário usa <button>, não <div onclick>.
+Tipos de input semanticamente corretos: type="email" para e-mail, text para nome/título, além de select, radio e checkbox bem aplicados.
+Uso de fieldset/legend: agrupa os campos do formulário como pedido na atividade.
+required presente em mais de 2 campos (nome, email, título).
+
+Nenhum pattern ou min/max: a atividade pede pelo menos 1 campo com essa validação extra (ex: pattern no CEP, minlength no título). Isso não aparece em nenhum input — é o item que mais pesa faltando.
+Uso de <br><br> para espaçamento: funciona, mas é prática desencorajada — o ideal seria CSS (margin/gap), como o próprio README do colega já observou em outro projeto.

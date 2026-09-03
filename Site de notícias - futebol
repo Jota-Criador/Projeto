@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FutNews Brasil</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚽ FutNews Brasil</h1>
+        <p>As principais notícias do futebol em um só lugar.</p>
+
+        <nav>
+            <a href="#">Início</a> |
+            <a href="#">Brasileirão</a> |
+            <a href="#">Champions League</a> |
+            <a href="#">Seleções</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Últimas Notícias</h2>
+
+            <article>
+                <h3>Time vence clássico por 2 x 0</h3>
+                <p>
+                    Em uma grande partida, o time da casa conquistou
+                    uma importante vitória diante de sua torcida.
+                </p>
+            </article>
+
+            <article>
+                <h3>Craque marca três gols</h3>
+                <p>
+                    O atacante foi o destaque da rodada e liderou
+                    sua equipe para mais uma vitória.
+                </p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Vídeos da Rodada</h2>
+
+            <video controls width="350">
+                <source src="gols.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+
+            <br><br>
+
+            <video controls width="350">
+                <source src="melhores-jogadas.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+
+        </section>
+
+        <aside>
+            <h2>Anúncios</h2>
+
+            <p>🔥 Promoção de camisas oficiais.</p>
+
+            <video controls width="250">
+                <source src="anuncio.mp4" type="video/mp4">
+            </video>
+
+            <br><br>
+
+            <p>⚽ Compre sua chuteira com desconto.</p>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <h2>Sugira uma notícia</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Preencha os dados</legend>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text"
+                       id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome"
+                       required>
+
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Digite seu e-mail"
+                       required>
+
+                <br><br>
+
+                <label for="titulo">Título da notícia:</label><br>
+                <input type="text"
+                       id="titulo"
+                       name="titulo"
+                       placeholder="Digite o título"
+                       required>
+
+                <br><br>
+
+                <label for="mensagem">Descrição:</label><br>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    cols="40"
+                    placeholder="Escreva a notícia"></textarea>
+
+                <br><br>
+
+                <label for="categoria">Categoria:</label><br>
+
+                <select id="categoria" name="categoria">
+
+                    <option>Brasileirão</option>
+                    <option>Champions League</option>
+                    <option>Copa do Brasil</option>
+                    <option>Seleções</option>
+
+                </select>
+
+                <br><br>
+
+                <p>Você gostou do site?</p>
+
+                <input type="radio" id="sim" name="gostou">
+                <label for="sim">Sim</label>
+
+                <input type="radio" id="nao" name="gostou">
+                <label for="nao">Não</label>
+
+                <br><br>
+
+                <input type="checkbox" id="receber" name="receber">
+                <label for="receber">
+                    Desejo receber novas notícias por e-mail.
+                </label>
+
+                <br><br>
+
+                <button type="submit">
+                    Enviar notícia
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </footer>
+
+</body>
+
+</html>
